@@ -1,0 +1,5387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0847ad2bb4b33aed81e854c3067e5d95 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0847ad2bb4b33aed81e854c3067e5d95" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0847ad2bb4b33aed81e854c3067e5d95 = L.map(
+                "map_0847ad2bb4b33aed81e854c3067e5d95",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_51c102020db6b53727be9c0a7a56b745 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_51c102020db6b53727be9c0a7a56b745.addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            var circle_marker_ed99f4d15faea86d603fd119ec262334 = L.circleMarker(
+                [40.76590936, -73.97634151],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_ed99f4d15faea86d603fd119ec262334.bindTooltip(
+                `<div>
+                     Central Park S & 6 Ave (ID: 2006)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3c86bb89163273b68714293b2962e2d6 = L.circleMarker(
+                [40.751873, -73.977706],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_3c86bb89163273b68714293b2962e2d6.bindTooltip(
+                `<div>
+                     Pershing Square North (ID: 519)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b248ac9f8399147a4acbf64533f2cb1b = L.circleMarker(
+                [40.71285887, -73.96590294],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_b248ac9f8399147a4acbf64533f2cb1b.bindTooltip(
+                `<div>
+                     S 4 St & Wythe Ave (ID: 460)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_531214dfb1c27788278552064a5b05c3 = L.circleMarker(
+                [40.76087502, -74.00277668],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_531214dfb1c27788278552064a5b05c3.bindTooltip(
+                `<div>
+                     12 Ave & W 40 St (ID: 514)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bbe11fd74c946a48e191ea93e11de373 = L.circleMarker(
+                [40.75513557, -73.98658032],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_bbe11fd74c946a48e191ea93e11de373.bindTooltip(
+                `<div>
+                     Broadway & W 41 St (ID: 465)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d14f7500b414e747e1d3b29bf9179283 = L.circleMarker(
+                [40.74173969, -73.99415556],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_d14f7500b414e747e1d3b29bf9179283.bindTooltip(
+                `<div>
+                     W 21 St & 6 Ave (ID: 435)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d36194d5419f7719f64a7c2d0d633fcf = L.circleMarker(
+                [40.76590936, -73.97634151],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_d36194d5419f7719f64a7c2d0d633fcf.bindTooltip(
+                `<div>
+                     Central Park S & 6 Ave (ID: 2006)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_096ad37d1ea702f00324e64614008c7e = L.circleMarker(
+                [40.75019995, -73.99093085],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_096ad37d1ea702f00324e64614008c7e.bindTooltip(
+                `<div>
+                     W 33 St & 7 Ave (ID: 492)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_adc0544635d77eb71a20cbb0f2b76545 = L.circleMarker(
+                [40.751873, -73.977706],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_adc0544635d77eb71a20cbb0f2b76545.bindTooltip(
+                `<div>
+                     Pershing Square North (ID: 519)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_909d970f00302fad0fabaa961de66478 = L.circleMarker(
+                [40.74691959, -74.00451887],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_909d970f00302fad0fabaa961de66478.bindTooltip(
+                `<div>
+                     W 22 St & 10 Ave (ID: 462)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c6cc272b746dc8d86d27d37a112380d = L.circleMarker(
+                [40.71907891179564, -73.94223690032959],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_9c6cc272b746dc8d86d27d37a112380d.bindTooltip(
+                `<div>
+                     Richardson St & N Henry St (ID: 3430)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6d3f169890887215e9fbebddda782032 = L.circleMarker(
+                [40.72621788, -73.98379855],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_6d3f169890887215e9fbebddda782032.bindTooltip(
+                `<div>
+                     E 7 St & Avenue A (ID: 432)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2be55caf354a4c7bf93f5c268113653f = L.circleMarker(
+                [40.71745169, -73.95850939],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_2be55caf354a4c7bf93f5c268113653f.bindTooltip(
+                `<div>
+                     N 6 St & Bedford Ave (ID: 3093)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_151ae7c0c64c0c31516a4ee5b00039af = L.circleMarker(
+                [40.71745169, -73.95850939],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_151ae7c0c64c0c31516a4ee5b00039af.bindTooltip(
+                `<div>
+                     N 6 St & Bedford Ave (ID: 3093)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_03d835b20fc1d02276325e60d9ee914d = L.circleMarker(
+                [40.716887, -73.963198],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_03d835b20fc1d02276325e60d9ee914d.bindTooltip(
+                `<div>
+                     Wythe Ave & Metropolitan Ave (ID: 2002)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ec00e8b66427b75e93423897de83295e = L.circleMarker(
+                [40.76132983124814, -73.97982001304628],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_ec00e8b66427b75e93423897de83295e.bindTooltip(
+                `<div>
+                     W 52 St & 6 Ave (ID: 3443)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0fedd55231839b7833df3b34cca303a5 = L.circleMarker(
+                [40.70355377, -74.00670227],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_0fedd55231839b7833df3b34cca303a5.bindTooltip(
+                `<div>
+                     South St & Gouverneur Ln (ID: 315)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_20a64ec6e39da331ac63b56dda37ebc8 = L.circleMarker(
+                [40.799484, -73.955613],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_20a64ec6e39da331ac63b56dda37ebc8.bindTooltip(
+                `<div>
+                     Central Park North & Adam Clayton Powell Blvd (ID: 3374)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aeb44ccf58af3fa54f2864677a33c57d = L.circleMarker(
+                [40.777507027547976, -73.98888587951659],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_aeb44ccf58af3fa54f2864677a33c57d.bindTooltip(
+                `<div>
+                     Riverside Blvd & W 67 St (ID: 3173)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_53c2a898123781c44b81903f26a5abff = L.circleMarker(
+                [40.728846, -74.008591],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_53c2a898123781c44b81903f26a5abff.bindTooltip(
+                `<div>
+                     Greenwich St & W Houston St (ID: 347)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8386be3fd5a5334251d060f6482e2a69 = L.circleMarker(
+                [40.75018156325683, -74.00218427181244],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_8386be3fd5a5334251d060f6482e2a69.bindTooltip(
+                `<div>
+                     W 27 St & 10 Ave (ID: 3258)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_26c3af8552a60b4f39a6e4bbfe34c8ea = L.circleMarker(
+                [40.76590936, -73.97634151],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_26c3af8552a60b4f39a6e4bbfe34c8ea.bindTooltip(
+                `<div>
+                     Central Park S & 6 Ave (ID: 2006)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8ce11671aefc2f8ca5d8391891f0544a = L.circleMarker(
+                [40.72311651, -73.95212324],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_8ce11671aefc2f8ca5d8391891f0544a.bindTooltip(
+                `<div>
+                     Bedford Ave & Nassau Ave (ID: 3107)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5b058db4d3b22c42c2a03c91db6e41de = L.circleMarker(
+                [40.75500254, -73.98014437],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_5b058db4d3b22c42c2a03c91db6e41de.bindTooltip(
+                `<div>
+                     W 44 St & 5 Ave (ID: 484)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eda1d17ce1701b8e21fc1ae53b9d1723 = L.circleMarker(
+                [40.7643971, -73.97371465],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_eda1d17ce1701b8e21fc1ae53b9d1723.bindTooltip(
+                `<div>
+                     Grand Army Plaza & Central Park S (ID: 281)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3666250e6dc0c003d30f84bd25374cb9 = L.circleMarker(
+                [40.751873, -73.977706],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_3666250e6dc0c003d30f84bd25374cb9.bindTooltip(
+                `<div>
+                     Pershing Square North (ID: 519)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_de477b07a063d1952691941d56ee1de4 = L.circleMarker(
+                [40.69308257, -73.97178913],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_de477b07a063d1952691941d56ee1de4.bindTooltip(
+                `<div>
+                     Adelphi St & Myrtle Ave (ID: 270)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ec1ac27a8de419777aa26b1ada70b6ff = L.circleMarker(
+                [40.75019995, -73.99093085],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_ec1ac27a8de419777aa26b1ada70b6ff.bindTooltip(
+                `<div>
+                     W 33 St & 7 Ave (ID: 492)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df0c885445b83054d7a4def31e514768 = L.circleMarker(
+                [40.69196566, -73.9813018],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_df0c885445b83054d7a4def31e514768.bindTooltip(
+                `<div>
+                     Willoughby St & Fleet St (ID: 239)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_79eabd1e865801f2629f7022220b1021 = L.circleMarker(
+                [40.7652654, -73.98192338],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_79eabd1e865801f2629f7022220b1021.bindTooltip(
+                `<div>
+                     Broadway & W 56 St (ID: 468)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c0029ff1122e5347a1c6b3e718ddd67 = L.circleMarker(
+                [40.74691959, -74.00451887],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_0c0029ff1122e5347a1c6b3e718ddd67.bindTooltip(
+                `<div>
+                     W 22 St & 10 Ave (ID: 462)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8960f4a4aaaccc116965e6c4f5631185 = L.circleMarker(
+                [40.76915505, -73.98191841],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_8960f4a4aaaccc116965e6c4f5631185.bindTooltip(
+                `<div>
+                     Broadway & W 60 St (ID: 499)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa52217a9c022fbb9c322b3f32740d34 = L.circleMarker(
+                [40.751873, -73.977706],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_aa52217a9c022fbb9c322b3f32740d34.bindTooltip(
+                `<div>
+                     Pershing Square North (ID: 519)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76789bf46099d76d33f18ac183a1e46e = L.circleMarker(
+                [40.739323, -74.008119],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_76789bf46099d76d33f18ac183a1e46e.bindTooltip(
+                `<div>
+                     Washington St & Gansevoort St (ID: 405)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_09c5e3b3ef3fd2859c7cb367ec67a4aa = L.circleMarker(
+                [40.715143, -73.944507],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_09c5e3b3ef3fd2859c7cb367ec67a4aa.bindTooltip(
+                `<div>
+                     Graham Ave & Conselyea St (ID: 3086)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bc4974d995cd6cf5a824e7af4559248d = L.circleMarker(
+                [40.74475148, -73.99915362],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_bc4974d995cd6cf5a824e7af4559248d.bindTooltip(
+                `<div>
+                     W 22 St & 8 Ave (ID: 453)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0fe07d8d210b6be31bd228be97174e2e = L.circleMarker(
+                [40.76590936, -73.97634151],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_0fe07d8d210b6be31bd228be97174e2e.bindTooltip(
+                `<div>
+                     Central Park S & 6 Ave (ID: 2006)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_734a6ab7a8ee73b948b6f29590ec0ab8 = L.circleMarker(
+                [40.75640548, -73.9900262],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_734a6ab7a8ee73b948b6f29590ec0ab8.bindTooltip(
+                `<div>
+                     W 41 St & 8 Ave (ID: 477)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a297a4a10568aa2c991abf59633d4d7d = L.circleMarker(
+                [40.7643971, -73.97371465],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_a297a4a10568aa2c991abf59633d4d7d.bindTooltip(
+                `<div>
+                     Grand Army Plaza & Central Park S (ID: 281)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f47c68fe1ff38816fe34318e0ee0f105 = L.circleMarker(
+                [40.751873, -73.977706],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_f47c68fe1ff38816fe34318e0ee0f105.bindTooltip(
+                `<div>
+                     Pershing Square North (ID: 519)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_734bdd02a01b6c7d687c48b1941b9f6f = L.circleMarker(
+                [40.73314259, -73.97573881],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_734bdd02a01b6c7d687c48b1941b9f6f.bindTooltip(
+                `<div>
+                     E 20 St & FDR Drive (ID: 487)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a566ae36cfda3d612f56eeca74cb38c8 = L.circleMarker(
+                [40.71291224, -74.01020234],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_a566ae36cfda3d612f56eeca74cb38c8.bindTooltip(
+                `<div>
+                     Barclay St & Church St (ID: 417)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3a1b4d613fd16be6aa45571dae014b9e = L.circleMarker(
+                [40.73038599, -74.00214988],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_3a1b4d613fd16be6aa45571dae014b9e.bindTooltip(
+                `<div>
+                     Carmine St & 6 Ave (ID: 368)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c82d42022713aa531291a708c2b9f79e = L.circleMarker(
+                [40.74691959, -74.00451887],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_c82d42022713aa531291a708c2b9f79e.bindTooltip(
+                `<div>
+                     W 22 St & 10 Ave (ID: 462)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_59565ddf9033d7f8c04edf7fc45866f1 = L.circleMarker(
+                [40.74025878, -73.98409214],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_59565ddf9033d7f8c04edf7fc45866f1.bindTooltip(
+                `<div>
+                     Lexington Ave & E 24 St (ID: 537)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91840982f76f3cc80c7dfb4bc3c00f19 = L.circleMarker(
+                [40.74901271, -73.98848395],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_91840982f76f3cc80c7dfb4bc3c00f19.bindTooltip(
+                `<div>
+                     6 Ave & W 33 St (ID: 505)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bfa3a7aabc94f8b1be3fc77a84955c7f = L.circleMarker(
+                [40.68981035, -73.97493121],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_bfa3a7aabc94f8b1be3fc77a84955c7f.bindTooltip(
+                `<div>
+                     DeKalb Ave & S Portland Ave (ID: 241)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1f1af9e3d0884232343f6056a899bdeb = L.circleMarker(
+                [40.751581, -73.97791],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_1f1af9e3d0884232343f6056a899bdeb.bindTooltip(
+                `<div>
+                     Pershing Square South (ID: 517)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_affa01ec9fd04f4892e11a0c63b53b7f = L.circleMarker(
+                [40.693261, -73.968896],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_affa01ec9fd04f4892e11a0c63b53b7f.bindTooltip(
+                `<div>
+                     Clinton Ave & Myrtle Ave (ID: 366)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_26e46d47e6893ce6cb361a74091667dc = L.circleMarker(
+                [40.74734825, -73.99723551],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_26e46d47e6893ce6cb361a74091667dc.bindTooltip(
+                `<div>
+                     W 26 St & 8 Ave (ID: 494)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9110237a8a7fd18272c824b3cd52b741 = L.circleMarker(
+                [40.73314259, -73.97573881],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_9110237a8a7fd18272c824b3cd52b741.bindTooltip(
+                `<div>
+                     E 20 St & FDR Drive (ID: 487)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_caf07501b232ab135bab8d6158eb38ec = L.circleMarker(
+                [40.751873, -73.977706],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_caf07501b232ab135bab8d6158eb38ec.bindTooltip(
+                `<div>
+                     Pershing Square North (ID: 519)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2d1925dd18e1b6ec8eef51fe05f45b22 = L.circleMarker(
+                [40.76590936, -73.97634151],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_2d1925dd18e1b6ec8eef51fe05f45b22.bindTooltip(
+                `<div>
+                     Central Park S & 6 Ave (ID: 2006)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_557a6b44abec7d6221cc67553c239429 = L.circleMarker(
+                [40.77579376683666, -73.9762057363987],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_557a6b44abec7d6221cc67553c239429.bindTooltip(
+                `<div>
+                     Central Park West & W 72 St (ID: 3165)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d8f99667433413c1d6e8f16f857753c2 = L.circleMarker(
+                [40.71754834, -74.01322069],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_d8f99667433413c1d6e8f16f857753c2.bindTooltip(
+                `<div>
+                     West St & Chambers St (ID: 426)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a3bcb1d20ef2d211cb1613ca3cba5aa2 = L.circleMarker(
+                [40.75019995, -73.99093085],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_a3bcb1d20ef2d211cb1613ca3cba5aa2.bindTooltip(
+                `<div>
+                     W 33 St & 7 Ave (ID: 492)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_12e0771e7016338ff025b08963865d93 = L.circleMarker(
+                [40.73454567, -73.99074142],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_12e0771e7016338ff025b08963865d93.bindTooltip(
+                `<div>
+                     Broadway & E 14 St (ID: 285)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_96a250190a376ea96022c196c85e1562 = L.circleMarker(
+                [40.711512, -74.015756],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_96a250190a376ea96022c196c85e1562.bindTooltip(
+                `<div>
+                     South End Ave & Liberty St (ID: 3002)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a4d4d4740181d2f0bc3602b5a5b13a44 = L.circleMarker(
+                [40.69512845, -73.99595065],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_a4d4d4740181d2f0bc3602b5a5b13a44.bindTooltip(
+                `<div>
+                     Hicks St & Montague St (ID: 406)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dad0cd0d98916079ecfedd8d408727c0 = L.circleMarker(
+                [40.71273266, -74.0046073],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_dad0cd0d98916079ecfedd8d408727c0.bindTooltip(
+                `<div>
+                     Centre St & Chambers St (ID: 387)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2402b13fa2b886563a8887e4dbc23a89 = L.circleMarker(
+                [40.746647, -73.993915],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_2402b13fa2b886563a8887e4dbc23a89.bindTooltip(
+                `<div>
+                     W 27 St & 7 Ave (ID: 442)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cc2b371b1a31f2d36f5b5cb77fec5996 = L.circleMarker(
+                [40.75724567911726, -73.97805914282799],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_cc2b371b1a31f2d36f5b5cb77fec5996.bindTooltip(
+                `<div>
+                     E 48 St & 5 Ave (ID: 3233)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8b41371bc1874c1a85753996d6a4a3d3 = L.circleMarker(
+                [40.71260486, -73.96264403],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_8b41371bc1874c1a85753996d6a4a3d3.bindTooltip(
+                `<div>
+                     S 3 St & Bedford Ave (ID: 481)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe227b3430676e44081435c559afdd15 = L.circleMarker(
+                [40.749717753, -74.002950346],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_fe227b3430676e44081435c559afdd15.bindTooltip(
+                `<div>
+                     W 26 St & 10 Ave (ID: 388)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_786058a02eb67b5903aac08d7f422b4c = L.circleMarker(
+                [40.74286877312112, -73.98918628692627],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_786058a02eb67b5903aac08d7f422b4c.bindTooltip(
+                `<div>
+                     Broadway & W 25 St (ID: 3641)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1ef7753323bcc3598dc256a1821e3c68 = L.circleMarker(
+                [40.74734825, -73.99723551],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_1ef7753323bcc3598dc256a1821e3c68.bindTooltip(
+                `<div>
+                     W 26 St & 8 Ave (ID: 494)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_34f29fdd841d49da069347078eb9857d = L.circleMarker(
+                [40.69196035, -73.96536851],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_34f29fdd841d49da069347078eb9857d.bindTooltip(
+                `<div>
+                     Willoughby Ave & Hall St (ID: 244)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe4177ad2e053c747d9799329eae156a = L.circleMarker(
+                [40.75019995, -73.99093085],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_fe4177ad2e053c747d9799329eae156a.bindTooltip(
+                `<div>
+                     W 33 St & 7 Ave (ID: 492)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f94853bacffd0bd2dd5c7faf7a607ee9 = L.circleMarker(
+                [40.74173969, -73.99415556],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_f94853bacffd0bd2dd5c7faf7a607ee9.bindTooltip(
+                `<div>
+                     W 21 St & 6 Ave (ID: 435)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9f9294a3eabbf21e1826601630d5fdf5 = L.circleMarker(
+                [40.75019995, -73.99093085],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_9f9294a3eabbf21e1826601630d5fdf5.bindTooltip(
+                `<div>
+                     W 33 St & 7 Ave (ID: 492)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9df6bab0ea3feb1b0f4bda28282bf21b = L.circleMarker(
+                [40.711512, -74.015756],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_9df6bab0ea3feb1b0f4bda28282bf21b.bindTooltip(
+                `<div>
+                     South End Ave & Liberty St (ID: 3002)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_22b467a07f99f351b1e4dd72d5683a4b = L.circleMarker(
+                [40.7643971, -73.97371465],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_22b467a07f99f351b1e4dd72d5683a4b.bindTooltip(
+                `<div>
+                     Grand Army Plaza & Central Park S (ID: 281)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a64ea17d4dec879f3c70b2b983a4db8 = L.circleMarker(
+                [40.75097711, -73.98765428],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_6a64ea17d4dec879f3c70b2b983a4db8.bindTooltip(
+                `<div>
+                     Broadway & W 36 St (ID: 267)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a923945adad976b3ad00447a8e224065 = L.circleMarker(
+                [40.72019521437465, -74.0103006362915],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_a923945adad976b3ad00447a8e224065.bindTooltip(
+                `<div>
+                     North Moore St & Greenwich St (ID: 3664)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_214bb9e674f9d0669d4f9e0e54686b3d = L.circleMarker(
+                [40.739323, -74.008119],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_214bb9e674f9d0669d4f9e0e54686b3d.bindTooltip(
+                `<div>
+                     Washington St & Gansevoort St (ID: 405)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d6b4d7fe566f4c146015aa601afd3a4d = L.circleMarker(
+                [40.68506807308177, -73.97790759801862],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_d6b4d7fe566f4c146015aa601afd3a4d.bindTooltip(
+                `<div>
+                     Hanson Pl & Ashland Pl (ID: 3429)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7dfcce0ceefce7f613924e08b297631 = L.circleMarker(
+                [40.75513557, -73.98658032],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_d7dfcce0ceefce7f613924e08b297631.bindTooltip(
+                `<div>
+                     Broadway & W 41 St (ID: 465)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5cbc744064e5c8fac1ecb3ccb803af2b = L.circleMarker(
+                [40.7734066, -73.97782542],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_5cbc744064e5c8fac1ecb3ccb803af2b.bindTooltip(
+                `<div>
+                     Central Park West & W 68 St (ID: 3163)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f7249e47f960ebd026ba36bd920440f = L.circleMarker(
+                [40.73020660529954, -73.99102628231049],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_0f7249e47f960ebd026ba36bd920440f.bindTooltip(
+                `<div>
+                     Lafayette St & E 8 St (ID: 293)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ec70952dad2bd62f4e0c2daea38fc196 = L.circleMarker(
+                [40.78472675, -73.96961715],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_ec70952dad2bd62f4e0c2daea38fc196.bindTooltip(
+                `<div>
+                     Central Park West & W 85 St (ID: 3168)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e1a3cd7719b001246f3837a00d5c56b7 = L.circleMarker(
+                [40.7457121, -73.98194829],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_e1a3cd7719b001246f3837a00d5c56b7.bindTooltip(
+                `<div>
+                     E 32 St & Park Ave (ID: 472)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_155b4a8e106ffeeaf26d561c8ec63d6e = L.circleMarker(
+                [40.74691959, -74.00451887],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_155b4a8e106ffeeaf26d561c8ec63d6e.bindTooltip(
+                `<div>
+                     W 22 St & 10 Ave (ID: 462)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3086b35628fa06e546744506edba7129 = L.circleMarker(
+                [40.766368, -73.971518],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_3086b35628fa06e546744506edba7129.bindTooltip(
+                `<div>
+                     5 Ave & E 63 St (ID: 3136)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e675933c6d6dffaa1fd1bca3f1ccfed5 = L.circleMarker(
+                [40.74173969, -73.99415556],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_e675933c6d6dffaa1fd1bca3f1ccfed5.bindTooltip(
+                `<div>
+                     W 21 St & 6 Ave (ID: 435)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e9f390dc85e15b8a1fe216d7dab2eab = L.circleMarker(
+                [40.7734066, -73.97782542],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_4e9f390dc85e15b8a1fe216d7dab2eab.bindTooltip(
+                `<div>
+                     Central Park West & W 68 St (ID: 3163)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_37d56d74ca358527179f558b2f419cec = L.circleMarker(
+                [40.7643971, -73.97371465],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_37d56d74ca358527179f558b2f419cec.bindTooltip(
+                `<div>
+                     Grand Army Plaza & Central Park S (ID: 281)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e39f682b06751ac36b70add5ceb35712 = L.circleMarker(
+                [40.73532427, -73.99800419],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_e39f682b06751ac36b70add5ceb35712.bindTooltip(
+                `<div>
+                     W 11 St & 6 Ave (ID: 254)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2ecbbd7c53bd2d00f96e03ba5a3da9e9 = L.circleMarker(
+                [40.73020660529954, -73.99102628231049],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_2ecbbd7c53bd2d00f96e03ba5a3da9e9.bindTooltip(
+                `<div>
+                     Lafayette St & E 8 St (ID: 293)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3949446a8258bf0e8acd887f0cfe52eb = L.circleMarker(
+                [40.7839636, -73.9471673],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_3949446a8258bf0e8acd887f0cfe52eb.bindTooltip(
+                `<div>
+                     2 Ave & E 96 St (ID: 3318)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_218313e604324a3ae487cbf32d109a84 = L.circleMarker(
+                [40.749156, -73.9916],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_218313e604324a3ae487cbf32d109a84.bindTooltip(
+                `<div>
+                     W 31 St & 7 Ave (ID: 379)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_43173c3617bb3bcc68a2c1fa05b537b3 = L.circleMarker(
+                [40.751873, -73.977706],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_43173c3617bb3bcc68a2c1fa05b537b3.bindTooltip(
+                `<div>
+                     Pershing Square North (ID: 519)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_32c97aedb5d42d5bbd113524d43834ee = L.circleMarker(
+                [40.711512, -74.015756],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_32c97aedb5d42d5bbd113524d43834ee.bindTooltip(
+                `<div>
+                     South End Ave & Liberty St (ID: 3002)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_45fc1ada9ac03f99b741415eb5a8024c = L.circleMarker(
+                [40.70905623, -74.01043382],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_45fc1ada9ac03f99b741415eb5a8024c.bindTooltip(
+                `<div>
+                     Liberty St & Broadway (ID: 195)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eaea591a49ed1f7bfc248cd0e530480e = L.circleMarker(
+                [40.728846, -74.008591],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_eaea591a49ed1f7bfc248cd0e530480e.bindTooltip(
+                `<div>
+                     Greenwich St & W Houston St (ID: 347)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_47a84371411aee7ee423ee85ee2223a6 = L.circleMarker(
+                [40.76087502, -74.00277668],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_47a84371411aee7ee423ee85ee2223a6.bindTooltip(
+                `<div>
+                     12 Ave & W 40 St (ID: 514)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_af37d9417d879b303a71bc6db15959ae = L.circleMarker(
+                [40.74734825, -73.99723551],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_af37d9417d879b303a71bc6db15959ae.bindTooltip(
+                `<div>
+                     W 26 St & 8 Ave (ID: 494)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_97588cffa2620ae828c39bbda055dd0a = L.circleMarker(
+                [40.74173969, -73.99415556],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_97588cffa2620ae828c39bbda055dd0a.bindTooltip(
+                `<div>
+                     W 21 St & 6 Ave (ID: 435)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b39cd6c788059abfc8e297f963673c75 = L.circleMarker(
+                [40.69196566, -73.9813018],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_b39cd6c788059abfc8e297f963673c75.bindTooltip(
+                `<div>
+                     Willoughby St & Fleet St (ID: 239)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_19a21b53cd97373576259f9a958f0a25 = L.circleMarker(
+                [40.73143724085228, -73.99490341544151],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_19a21b53cd97373576259f9a958f0a25.bindTooltip(
+                `<div>
+                     University Pl & E 8 St (ID: 3244)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f00e0de1dc417ba9ead6540456bc3b0d = L.circleMarker(
+                [40.749156, -73.9916],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            circle_marker_f00e0de1dc417ba9ead6540456bc3b0d.bindTooltip(
+                `<div>
+                     W 31 St & 7 Ave (ID: 379)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_c07c92b40978b24a9c321172b17a5d5e = L.polyline.antPath(
+              [[40.76590936, -73.97634151], [40.78307, -73.95939]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 0.46,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_c07c92b40978b24a9c321172b17a5d5e.bindTooltip(
+                `<div>
+                     23 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_0b7f84edc1fc59afb435655c56a674c3 = L.polyline.antPath(
+              [[40.751873, -73.977706], [40.74096374, -73.98602213]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 0.44,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_0b7f84edc1fc59afb435655c56a674c3.bindTooltip(
+                `<div>
+                     22 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_947af777ea7c9f645a18c127a113a8d1 = L.polyline.antPath(
+              [[40.71285887, -73.96590294], [40.71745169, -73.95850939]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 0.42,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_947af777ea7c9f645a18c127a113a8d1.bindTooltip(
+                `<div>
+                     21 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_6015cfce01934a0c80cc132252aad95b = L.polyline.antPath(
+              [[40.76087502, -74.00277668], [40.71754834, -74.01322069]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 0.42,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_6015cfce01934a0c80cc132252aad95b.bindTooltip(
+                `<div>
+                     21 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_470edc0a12736b4ca916a9e36de43459 = L.polyline.antPath(
+              [[40.75513557, -73.98658032], [40.751873, -73.977706]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 0.38,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_470edc0a12736b4ca916a9e36de43459.bindTooltip(
+                `<div>
+                     19 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_49ae27a4c610f94114e6fe1332dc9c97 = L.polyline.antPath(
+              [[40.74173969, -73.99415556], [40.74691959, -74.00451887]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 0.36,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_49ae27a4c610f94114e6fe1332dc9c97.bindTooltip(
+                `<div>
+                     18 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_71546df3cf2ea1882df8b8b2031c7fd5 = L.polyline.antPath(
+              [[40.76590936, -73.97634151], [40.77579376683666, -73.9762057363987]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 0.36,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_71546df3cf2ea1882df8b8b2031c7fd5.bindTooltip(
+                `<div>
+                     18 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_3eef281a1595ba41379a9334bcf41930 = L.polyline.antPath(
+              [[40.75019995, -73.99093085], [40.751873, -73.977706]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 0.34,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_3eef281a1595ba41379a9334bcf41930.bindTooltip(
+                `<div>
+                     17 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_c7014041017e1f485846bae53f754417 = L.polyline.antPath(
+              [[40.751873, -73.977706], [40.75019995, -73.99093085]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 0.34,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_c7014041017e1f485846bae53f754417.bindTooltip(
+                `<div>
+                     17 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_b376d0b8799330d3c4e45e92a6ea59f4 = L.polyline.antPath(
+              [[40.74691959, -74.00451887], [40.74475148, -73.99915362]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 0.34,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_b376d0b8799330d3c4e45e92a6ea59f4.bindTooltip(
+                `<div>
+                     17 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_effcf409c9a88face2f4d3acace19d2a = L.polyline.antPath(
+              [[40.71907891179564, -73.94223690032959], [40.715143, -73.944507]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 0.34,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_effcf409c9a88face2f4d3acace19d2a.bindTooltip(
+                `<div>
+                     17 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_db45e2af909750610274005be8acf874 = L.polyline.antPath(
+              [[40.72621788, -73.98379855], [40.72951496224949, -73.99075269699097]],
+              {
+  "stroke": true,
+  "color": "red",
+  "weight": 0.34,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_db45e2af909750610274005be8acf874.bindTooltip(
+                `<div>
+                     17 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_b1b0e47d07258eb11eba51cb9aad2751 = L.polyline.antPath(
+              [[40.71745169, -73.95850939], [40.71285887, -73.96590294]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.32,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_b1b0e47d07258eb11eba51cb9aad2751.bindTooltip(
+                `<div>
+                     16 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_f826beea348ab37d6064ee764a9c43b6 = L.polyline.antPath(
+              [[40.71745169, -73.95850939], [40.716887, -73.963198]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.32,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_f826beea348ab37d6064ee764a9c43b6.bindTooltip(
+                `<div>
+                     16 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_290ba9e942ca0c71b0c8a8a4dd5c2218 = L.polyline.antPath(
+              [[40.716887, -73.963198], [40.71745169, -73.95850939]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.32,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_290ba9e942ca0c71b0c8a8a4dd5c2218.bindTooltip(
+                `<div>
+                     16 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_4a41826dacb589c433caabb012e7d120 = L.polyline.antPath(
+              [[40.76132983124814, -73.97982001304628], [40.75019995, -73.99093085]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.32,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_4a41826dacb589c433caabb012e7d120.bindTooltip(
+                `<div>
+                     16 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_7b64daeb94139cb8aaa0b95f9ae02be6 = L.polyline.antPath(
+              [[40.70355377, -74.00670227], [40.70122128, -74.01234218]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.32,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_7b64daeb94139cb8aaa0b95f9ae02be6.bindTooltip(
+                `<div>
+                     16 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_20356838fea0c652c7aba58c9f67b412 = L.polyline.antPath(
+              [[40.799484, -73.955613], [40.76590936, -73.97634151]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_20356838fea0c652c7aba58c9f67b412.bindTooltip(
+                `<div>
+                     15 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_ea4faa56ad0a56456230b1deb6b015d0 = L.polyline.antPath(
+              [[40.777507027547976, -73.98888587951659], [40.76087502, -74.00277668]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_ea4faa56ad0a56456230b1deb6b015d0.bindTooltip(
+                `<div>
+                     15 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_76b8e3b92e19812df93c72e7fa739394 = L.polyline.antPath(
+              [[40.728846, -74.008591], [40.71754834, -74.01322069]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_76b8e3b92e19812df93c72e7fa739394.bindTooltip(
+                `<div>
+                     15 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_a06ce42d44db4bad92589ca622f89b45 = L.polyline.antPath(
+              [[40.75018156325683, -74.00218427181244], [40.74734825, -73.99723551]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_a06ce42d44db4bad92589ca622f89b45.bindTooltip(
+                `<div>
+                     15 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_823423220d3ea73a3cb07721257f0626 = L.polyline.antPath(
+              [[40.76590936, -73.97634151], [40.76915505, -73.98191841]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_823423220d3ea73a3cb07721257f0626.bindTooltip(
+                `<div>
+                     15 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_1b933f34fbe7a3f7d06d2742f828b0c7 = L.polyline.antPath(
+              [[40.72311651, -73.95212324], [40.71774592, -73.95600096]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.3,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_1b933f34fbe7a3f7d06d2742f828b0c7.bindTooltip(
+                `<div>
+                     15 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_cb7e56161931dc130ed3a308f0835e1d = L.polyline.antPath(
+              [[40.75500254, -73.98014437], [40.75019995, -73.99093085]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.28,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_cb7e56161931dc130ed3a308f0835e1d.bindTooltip(
+                `<div>
+                     14 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_a0d80415b6c622c57dc6ea0fea4703e5 = L.polyline.antPath(
+              [[40.7643971, -73.97371465], [40.78307, -73.95939]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.28,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_a0d80415b6c622c57dc6ea0fea4703e5.bindTooltip(
+                `<div>
+                     14 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_02757270f764ae162ab8c2fc48eb27ad = L.polyline.antPath(
+              [[40.751873, -73.977706], [40.74444921, -73.98303529]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.28,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_02757270f764ae162ab8c2fc48eb27ad.bindTooltip(
+                `<div>
+                     14 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_9749049b060f88ddec178f94387adadc = L.polyline.antPath(
+              [[40.69308257, -73.97178913], [40.69196566, -73.9813018]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.28,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_9749049b060f88ddec178f94387adadc.bindTooltip(
+                `<div>
+                     14 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_f256f3920c4756ce83cdad1b2d49ffea = L.polyline.antPath(
+              [[40.75019995, -73.99093085], [40.76132983124814, -73.97982001304628]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.28,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_f256f3920c4756ce83cdad1b2d49ffea.bindTooltip(
+                `<div>
+                     14 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_84abfa07ef94df3c806ac76cf92ac961 = L.polyline.antPath(
+              [[40.69196566, -73.9813018], [40.69308257, -73.97178913]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.28,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_84abfa07ef94df3c806ac76cf92ac961.bindTooltip(
+                `<div>
+                     14 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_70aaa2fcc5f4d4e8f0c064bbea7f4372 = L.polyline.antPath(
+              [[40.7652654, -73.98192338], [40.76068327096592, -73.9845272898674]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.28,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_70aaa2fcc5f4d4e8f0c064bbea7f4372.bindTooltip(
+                `<div>
+                     14 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_7b9ce8f2388bf7acf877717696e6ea83 = L.polyline.antPath(
+              [[40.74691959, -74.00451887], [40.7403432, -73.98955109]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.28,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_7b9ce8f2388bf7acf877717696e6ea83.bindTooltip(
+                `<div>
+                     14 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_e2d6510afc2d27eacfad9fc75f23fa8b = L.polyline.antPath(
+              [[40.76915505, -73.98191841], [40.77579376683666, -73.9762057363987]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.28,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_e2d6510afc2d27eacfad9fc75f23fa8b.bindTooltip(
+                `<div>
+                     14 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_f9d9e5a057262ea33304487668644e76 = L.polyline.antPath(
+              [[40.751873, -73.977706], [40.75640548, -73.9900262]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.28,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_f9d9e5a057262ea33304487668644e76.bindTooltip(
+                `<div>
+                     14 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_999ddb12287b5c0535cbc6b47320002d = L.polyline.antPath(
+              [[40.739323, -74.008119], [40.71754834, -74.01322069]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.28,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_999ddb12287b5c0535cbc6b47320002d.bindTooltip(
+                `<div>
+                     14 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_b3950323ec61a37d029100a0e07da2e8 = L.polyline.antPath(
+              [[40.715143, -73.944507], [40.71907891179564, -73.94223690032959]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.28,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_b3950323ec61a37d029100a0e07da2e8.bindTooltip(
+                `<div>
+                     14 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_7334efd3b55824dd4513fb722c71d3c2 = L.polyline.antPath(
+              [[40.74475148, -73.99915362], [40.74691959, -74.00451887]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.28,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_7334efd3b55824dd4513fb722c71d3c2.bindTooltip(
+                `<div>
+                     14 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_d648eb3634fb288afe5de2b291455882 = L.polyline.antPath(
+              [[40.76590936, -73.97634151], [40.7734066, -73.97782542]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.26,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_d648eb3634fb288afe5de2b291455882.bindTooltip(
+                `<div>
+                     13 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_6b54ea14949f5edc489e35ebc7f43073 = L.polyline.antPath(
+              [[40.75640548, -73.9900262], [40.751873, -73.977706]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.26,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_6b54ea14949f5edc489e35ebc7f43073.bindTooltip(
+                `<div>
+                     13 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_7611496c99a9eb2c3045bb5a21a5c961 = L.polyline.antPath(
+              [[40.7643971, -73.97371465], [40.77282817, -73.96685276]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.26,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_7611496c99a9eb2c3045bb5a21a5c961.bindTooltip(
+                `<div>
+                     13 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_1dcdc86a740b22102a16e4a27bc9ea10 = L.polyline.antPath(
+              [[40.751873, -73.977706], [40.7403432, -73.98955109]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.26,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_1dcdc86a740b22102a16e4a27bc9ea10.bindTooltip(
+                `<div>
+                     13 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_e1f999526ca2ad4a83efb1ee798309dc = L.polyline.antPath(
+              [[40.73314259, -73.97573881], [40.736502, -73.97809472]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.26,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_e1f999526ca2ad4a83efb1ee798309dc.bindTooltip(
+                `<div>
+                     13 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_67702d98d1b26387b41180ad2420c687 = L.polyline.antPath(
+              [[40.71291224, -74.01020234], [40.72243797, -74.00566443]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.26,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_67702d98d1b26387b41180ad2420c687.bindTooltip(
+                `<div>
+                     13 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_2daf53d7ce3337175adde166f74ccdd9 = L.polyline.antPath(
+              [[40.73038599, -74.00214988], [40.73172428, -74.00674436]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.26,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_2daf53d7ce3337175adde166f74ccdd9.bindTooltip(
+                `<div>
+                     13 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_6442ffd53bccdf27a3c5644258d64ddc = L.polyline.antPath(
+              [[40.74691959, -74.00451887], [40.74173969, -73.99415556]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.26,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_6442ffd53bccdf27a3c5644258d64ddc.bindTooltip(
+                `<div>
+                     13 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_7b68db590e85a8b736960fbd0f42d699 = L.polyline.antPath(
+              [[40.74025878, -73.98409214], [40.749156, -73.9916]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.26,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_7b68db590e85a8b736960fbd0f42d699.bindTooltip(
+                `<div>
+                     13 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_82e8058ea8d67d5df123c6654bd5a0aa = L.polyline.antPath(
+              [[40.74901271, -73.98848395], [40.75513557, -73.98658032]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.26,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_82e8058ea8d67d5df123c6654bd5a0aa.bindTooltip(
+                `<div>
+                     13 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_20f40909f97afc0ed8ca2941b88a922a = L.polyline.antPath(
+              [[40.68981035, -73.97493121], [40.689888, -73.981013]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.26,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_20f40909f97afc0ed8ca2941b88a922a.bindTooltip(
+                `<div>
+                     13 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_23ee9c15559834ed50feba21d0adc8ef = L.polyline.antPath(
+              [[40.751581, -73.97791], [40.74854862, -73.98808416]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.26,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_23ee9c15559834ed50feba21d0adc8ef.bindTooltip(
+                `<div>
+                     13 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_19eb9729475cffa86491598ea3e80bfc = L.polyline.antPath(
+              [[40.693261, -73.968896], [40.69196566, -73.9813018]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.26,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_19eb9729475cffa86491598ea3e80bfc.bindTooltip(
+                `<div>
+                     13 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_c0db87f1d91c5e2687f7a54fe3ec939c = L.polyline.antPath(
+              [[40.74734825, -73.99723551], [40.749717753, -74.002950346]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.26,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_c0db87f1d91c5e2687f7a54fe3ec939c.bindTooltip(
+                `<div>
+                     13 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_c9912862e0de6a803b2cc5e2a4845d86 = L.polyline.antPath(
+              [[40.73314259, -73.97573881], [40.7403432, -73.98955109]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.26,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_c9912862e0de6a803b2cc5e2a4845d86.bindTooltip(
+                `<div>
+                     13 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_7b0a3908735d4a0358450be373ee0d70 = L.polyline.antPath(
+              [[40.751873, -73.977706], [40.74854862, -73.98808416]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.26,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_7b0a3908735d4a0358450be373ee0d70.bindTooltip(
+                `<div>
+                     13 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_5d9401652b640e783a7fafbf939f6dbe = L.polyline.antPath(
+              [[40.76590936, -73.97634151], [40.799484, -73.955613]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.26,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_5d9401652b640e783a7fafbf939f6dbe.bindTooltip(
+                `<div>
+                     13 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_089c047e17e09fd628c732cb8bb1635b = L.polyline.antPath(
+              [[40.77579376683666, -73.9762057363987], [40.76915505, -73.98191841]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_089c047e17e09fd628c732cb8bb1635b.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_5c53d6bdb662941dd20ff58255a79d0b = L.polyline.antPath(
+              [[40.71754834, -74.01322069], [40.70569254, -74.01677685]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_5c53d6bdb662941dd20ff58255a79d0b.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_8f393b643fd17891eb01b78df7abfdb0 = L.polyline.antPath(
+              [[40.75019995, -73.99093085], [40.75510267, -73.97498696]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_8f393b643fd17891eb01b78df7abfdb0.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_03af6c0d930b77be7e2825750af2dfe5 = L.polyline.antPath(
+              [[40.73454567, -73.99074142], [40.72903917, -73.99404649]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_03af6c0d930b77be7e2825750af2dfe5.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_43e6616434e4a25365742819c85703fd = L.polyline.antPath(
+              [[40.711512, -74.015756], [40.70834698, -74.01713445]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_43e6616434e4a25365742819c85703fd.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_ce85389eef10a2f3e734216af6b25782 = L.polyline.antPath(
+              [[40.69512845, -73.99595065], [40.69760127, -73.99344559]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_ce85389eef10a2f3e734216af6b25782.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_9cf84e497299563b5431c36e2f81ab3b = L.polyline.antPath(
+              [[40.71273266, -74.0046073], [40.722103786686034, -73.99724900722504]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_9cf84e497299563b5431c36e2f81ab3b.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_63c347c7cfca8a215c10da5f0249c181 = L.polyline.antPath(
+              [[40.746647, -73.993915], [40.751396, -74.005226]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_63c347c7cfca8a215c10da5f0249c181.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_2e12e026b47f45fea221ccc297fdbd50 = L.polyline.antPath(
+              [[40.75724567911726, -73.97805914282799], [40.76227205, -73.98788205]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_2e12e026b47f45fea221ccc297fdbd50.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_c62b3b44f5dac5ab3e5e31b1dff4a62a = L.polyline.antPath(
+              [[40.71260486, -73.96264403], [40.71745169, -73.95850939]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_c62b3b44f5dac5ab3e5e31b1dff4a62a.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_8d126ee74c84f445ca2fefeb1da58378 = L.polyline.antPath(
+              [[40.749717753, -74.002950346], [40.74734825, -73.99723551]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_8d126ee74c84f445ca2fefeb1da58378.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_4986edcd40f0f62e8e9d86a9d539b375 = L.polyline.antPath(
+              [[40.74286877312112, -73.98918628692627], [40.73704984, -73.99009296]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_4986edcd40f0f62e8e9d86a9d539b375.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_7b78c27b1bfadddeee92aba569e19615 = L.polyline.antPath(
+              [[40.74734825, -73.99723551], [40.751396, -74.005226]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_7b78c27b1bfadddeee92aba569e19615.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_5409e6073c779920864c272f40db94b3 = L.polyline.antPath(
+              [[40.69196035, -73.96536851], [40.689888, -73.981013]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_5409e6073c779920864c272f40db94b3.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_62f8a7875bf2c93a606eae65f6ba5093 = L.polyline.antPath(
+              [[40.75019995, -73.99093085], [40.744023, -73.976056]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_62f8a7875bf2c93a606eae65f6ba5093.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_3e8152b362efd2667106db4f0f80a461 = L.polyline.antPath(
+              [[40.74173969, -73.99415556], [40.7454973, -74.00197139]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_3e8152b362efd2667106db4f0f80a461.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_846aa5dfd84eeb2bbde6a48e3049e54f = L.polyline.antPath(
+              [[40.75019995, -73.99093085], [40.75500254, -73.98014437]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_846aa5dfd84eeb2bbde6a48e3049e54f.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_83cea699a63601e1272718188de997d0 = L.polyline.antPath(
+              [[40.711512, -74.015756], [40.701907, -74.013942]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_83cea699a63601e1272718188de997d0.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_9d6ac605d3f10b5c85cb2a4d003ee3b4 = L.polyline.antPath(
+              [[40.7643971, -73.97371465], [40.77579376683666, -73.9762057363987]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_9d6ac605d3f10b5c85cb2a4d003ee3b4.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_adddf8c200d6cba222930e0c5622b251 = L.polyline.antPath(
+              [[40.75097711, -73.98765428], [40.751873, -73.977706]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_adddf8c200d6cba222930e0c5622b251.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_1cb4077d176bb535c2fa5aacdb19b6de = L.polyline.antPath(
+              [[40.72019521437465, -74.0103006362915], [40.7153379, -74.01658354]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.24,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_1cb4077d176bb535c2fa5aacdb19b6de.bindTooltip(
+                `<div>
+                     12 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_1b615ba2b6fe108cfb420c179736e7e2 = L.polyline.antPath(
+              [[40.739323, -74.008119], [40.73291553, -74.00711384]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_1b615ba2b6fe108cfb420c179736e7e2.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_d56749d88c40e60547e24bd13bfcd2e4 = L.polyline.antPath(
+              [[40.68506807308177, -73.97790759801862], [40.69236178, -73.98631746]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_d56749d88c40e60547e24bd13bfcd2e4.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_98ca3043f7165fcad87e9eec429719d1 = L.polyline.antPath(
+              [[40.75513557, -73.98658032], [40.74286877312112, -73.98918628692627]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_98ca3043f7165fcad87e9eec429719d1.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_38b48caad9bf1f6adf9015452779bb52 = L.polyline.antPath(
+              [[40.7734066, -73.97782542], [40.78307, -73.95939]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_38b48caad9bf1f6adf9015452779bb52.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_4901564a7a0aeae2c55595a083831ba3 = L.polyline.antPath(
+              [[40.73020660529954, -73.99102628231049], [40.73454567, -73.99074142]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_4901564a7a0aeae2c55595a083831ba3.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_0bf403de39c7f295ac4985f8681c7e35 = L.polyline.antPath(
+              [[40.78472675, -73.96961715], [40.76695317, -73.98169333]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_0bf403de39c7f295ac4985f8681c7e35.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_381655501fec27c69608d27392cad869 = L.polyline.antPath(
+              [[40.7457121, -73.98194829], [40.74144387, -73.97536082]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_381655501fec27c69608d27392cad869.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_878469831acfcc199d0569ea6a38757a = L.polyline.antPath(
+              [[40.74691959, -74.00451887], [40.73935542, -73.99931783]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_878469831acfcc199d0569ea6a38757a.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_493ff2caf73f966b58834ccc0d951d02 = L.polyline.antPath(
+              [[40.766368, -73.971518], [40.76590936, -73.97634151]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_493ff2caf73f966b58834ccc0d951d02.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_3d2115d1a489d4e6f3dfd219b1d3e613 = L.polyline.antPath(
+              [[40.74173969, -73.99415556], [40.74475148, -73.99915362]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_3d2115d1a489d4e6f3dfd219b1d3e613.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_2e4d17e8a06ab49b7a0d40a7f00cd93c = L.polyline.antPath(
+              [[40.7734066, -73.97782542], [40.76590936, -73.97634151]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_2e4d17e8a06ab49b7a0d40a7f00cd93c.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_b2f85fe3a968ac2978ad56dfa439b443 = L.polyline.antPath(
+              [[40.7643971, -73.97371465], [40.76590936, -73.97634151]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_b2f85fe3a968ac2978ad56dfa439b443.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_6658d45ee28c446ce6b98acbce45d8b4 = L.polyline.antPath(
+              [[40.73532427, -73.99800419], [40.74173969, -73.99415556]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_6658d45ee28c446ce6b98acbce45d8b4.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_bdd023c8bc1b3fd47372000b016e3198 = L.polyline.antPath(
+              [[40.73020660529954, -73.99102628231049], [40.7403432, -73.98955109]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_bdd023c8bc1b3fd47372000b016e3198.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_e166424c07c984abaf44da551ce3a0db = L.polyline.antPath(
+              [[40.7839636, -73.9471673], [40.7869946, -73.94164802]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_e166424c07c984abaf44da551ce3a0db.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_7431bee6b530b66b6237b72e3d786607 = L.polyline.antPath(
+              [[40.749156, -73.9916], [40.74025878, -73.98409214]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_7431bee6b530b66b6237b72e3d786607.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_69a5443fd227cd08a44db684e4e35288 = L.polyline.antPath(
+              [[40.751873, -73.977706], [40.746647, -73.993915]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_69a5443fd227cd08a44db684e4e35288.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_5645f3ca7c37345d8b6d56ab24092b74 = L.polyline.antPath(
+              [[40.711512, -74.015756], [40.70463334, -74.01361706]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_5645f3ca7c37345d8b6d56ab24092b74.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_f4ca37aeb40fb44dc116c3cc6b8b1d0c = L.polyline.antPath(
+              [[40.70905623, -74.01043382], [40.70463334, -74.01361706]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_f4ca37aeb40fb44dc116c3cc6b8b1d0c.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_2f50e6f4cc257d69b61457fc168a925c = L.polyline.antPath(
+              [[40.728846, -74.008591], [40.73291553, -74.00711384]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_2f50e6f4cc257d69b61457fc168a925c.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_9c3dc77500c881e8d701053d1cae6ce9 = L.polyline.antPath(
+              [[40.76087502, -74.00277668], [40.751396, -74.005226]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_9c3dc77500c881e8d701053d1cae6ce9.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_2b0a185477365af7500626dba169a75c = L.polyline.antPath(
+              [[40.74734825, -73.99723551], [40.75018156325683, -74.00218427181244]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_2b0a185477365af7500626dba169a75c.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_5e52254588222956e806bf91448787ca = L.polyline.antPath(
+              [[40.74173969, -73.99415556], [40.73935542, -73.99931783]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_5e52254588222956e806bf91448787ca.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_44e9ee25dd43f4af664dc7b74f5aaff8 = L.polyline.antPath(
+              [[40.69196566, -73.9813018], [40.693261, -73.968896]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_44e9ee25dd43f4af664dc7b74f5aaff8.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_a2cb0b79a56b7c30004c5c6bd618b5e4 = L.polyline.antPath(
+              [[40.73143724085228, -73.99490341544151], [40.73492695, -73.99200509]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_a2cb0b79a56b7c30004c5c6bd618b5e4.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            ant_path_6d7c0c250f2955e02b098d4808613c52 = L.polyline.antPath(
+              [[40.749156, -73.9916], [40.74144387, -73.97536082]],
+              {
+  "stroke": true,
+  "color": "orange",
+  "weight": 0.22,
+  "opacity": 0.5,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": "5,5",
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "smoothFactor": 1.0,
+  "noClip": false,
+  "paused": false,
+  "reverse": false,
+  "hardwareAcceleration": false,
+  "delay": 400,
+  "pulseColor": "#FFFFFF",
+}
+        ).addTo(map_0847ad2bb4b33aed81e854c3067e5d95);
+        
+    
+            ant_path_6d7c0c250f2955e02b098d4808613c52.bindTooltip(
+                `<div>
+                     11 trips
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
